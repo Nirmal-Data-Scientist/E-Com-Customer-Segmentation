@@ -2,7 +2,6 @@
 
 This project focuses on customer segmentation in an e-commerce dataset. The goal is to divide the customers into distinct groups based on their behavior and characteristics. The analysis aims to uncover patterns and insights that can help improve marketing strategies and personalize the customer experience.
 
----
 
 ## Dataset
 
@@ -45,9 +44,9 @@ Furthermore, the code displays the count of customers in each cluster and the to
 ## Interpretation of Results
 The analysis reveals two distinct customer clusters based on search behavior and purchase patterns. Here are some key insights:
 
-1. Cluster 1: Customers in this cluster have a higher total search count but make significantly fewer orders compared to Cluster 2. They seem to engage in more searches but have a lower likelihood of making a purchase.
+    1. Cluster 1: Customers in this cluster have a higher total search count but make significantly fewer orders compared to Cluster 2. They seem to engage in more searches but have a lower likelihood of making a purchase.
 
-2. Cluster 2: Customers in this cluster have a slightly lower search count but make a significantly higher number of orders compared to Cluster 1. They are more likely to convert their searches into purchases.
+    2. Cluster 2: Customers in this cluster have a slightly lower search count but make a significantly higher number of orders compared to Cluster 1. They are more likely to convert their searches into purchases.
 
 Gender analysis within each cluster shows that female customers dominate both clusters, reflecting the gender imbalance in the original dataset (80:20 female to male ratio).
 
