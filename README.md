@@ -4,17 +4,20 @@ This project focuses on customer segmentation in an e-commerce dataset. The goal
 
 ---
 
-## Dataset
+### Dataset
 
 The dataset used in this project is sourced from an e-commerce company and contains information about customer interactions and purchases. The dataset includes the following columns:
 
-- `Brand1`, `Brand2`, ..., `BrandN`: The number of searches made by each customer for different brands.
+- `Cust_ID`: Customer_ID in that particular e-commerce website (Dropped during Preprocessing).
 - `Gender`: The gender of the customer.
+- `Orders`: The number of orders made by each customer in total.
+- `Brand1`, `Brand2`, ..., `BrandN`: The number of searches made by each customer for different brands.
+- `Total_Search`: Total number of search made by each customer across brands (added during analysis).
 - `Cluster`: The assigned cluster label for each customer (added during analysis).
 
 ---
 
-## Data Preprocessing
+### Data Preprocessing
 The code begins by importing necessary libraries and loading the dataset into a Pandas DataFrame. It performs some initial data exploration by checking the shape of the dataset, identifying missing values, and removing duplicates.
 
 Next, the categorical variable "Gender" is encoded into numerical values using one-hot encoding, as K-means clustering requires numerical inputs.
@@ -23,14 +26,14 @@ Outliers in the dataset are handled by applying clipping, which caps the values 
 
 ---
 
-## Determining the Optimal Number of Clusters
+### Determining the Optimal Number of Clusters
 The code uses the elbow method, silhouette score, Calinski-Harabasz score, and Davies-Bouldin score to determine the optimal number of clusters. It calculates these metrics for a range of cluster numbers from 2 to 10 and visualizes the results using plots.
 
 Based on the metrics, the code selects the number of clusters with the best scores, which in this case is 2 clusters.
 
 ---
 
-## Clustering and Visualization
+### Clustering and Visualization
 Using the optimal number of clusters, the code performs K-means clustering on the preprocessed dataset. It assigns cluster labels to each data point.
 
 The code then visualizes the clusters by plotting a scatter plot of "Orders" versus "Jordan" variables, with each cluster represented by a different color.
@@ -39,7 +42,7 @@ Furthermore, the code displays the count of customers in each cluster and the to
 
 ---
 
-## Interpretation of Results
+### Interpretation of Results
 The analysis reveals two distinct customer clusters based on search behavior and purchase patterns. Here are some key insights:
 
 1. Cluster 1: Customers in this cluster have a higher total search count but make significantly fewer orders compared to Cluster 2. They seem to engage in more searches but have a lower likelihood of making a purchase.
@@ -50,5 +53,5 @@ Gender analysis within each cluster shows that female customers dominate both cl
 
 ---
 
-## Conclusion
+### Conclusion
 The customer segmentation analysis using K-means clustering provides valuable insights into the search behavior and purchase patterns of e-commerce customers. The identified clusters can be used to tailor marketing strategies, improve customer targeting, and personalize recommendations to increase sales and customer satisfaction.
