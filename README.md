@@ -2,13 +2,11 @@
 
 This project focuses on customer segmentation in an e-commerce dataset. The goal is to divide the customers into distinct groups based on their behavior and characteristics. The analysis aims to uncover patterns and insights that can help improve marketing strategies and personalize the customer experience.
 
----
-
 ### Dataset
 
 The dataset used in this project is sourced from an e-commerce company and contains information about customer interactions and purchases. The dataset includes the following columns:
 
-- `Cust_ID`: Customer_ID in that particular e-commerce website (Dropped during Preprocessing).
+- `Cust_ID`: Customer_ID in that particular e-commerce website (dropped during preprocessing).
 - `Gender`: The gender of the customer.
 - `Orders`: The number of orders made by each customer in total.
 - `Brand1`, `Brand2`, ..., `BrandN`: The number of searches made by each customer for different brands.
