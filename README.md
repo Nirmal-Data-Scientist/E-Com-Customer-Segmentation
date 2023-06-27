@@ -28,6 +28,21 @@ The code uses the elbow method, silhouette score, Calinski-Harabasz score, and D
 
 Based on the metrics, the code selects the number of clusters with the best scores, which in this case is 2 clusters.
 
+<br>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/Nirmal-Data-Scientist/E-Com-Customer-Segmentation/assets/123751119/da3da232-5124-40e3-a961-dfab596082db" alt="Visualization">
+</div>
+
+<br>
+
+<br>
+
+<div align="center">
+  <img src="https://github.com/Nirmal-Data-Scientist/E-Com-Customer-Segmentation/assets/123751119/ce392b8f-ebf0-4198-97a2-f3bcc63b365a" alt="Visualization">
+</div>
 
 ## Clustering and Visualization
 Using the optimal number of clusters, the code performs K-means clustering on the preprocessed dataset. It assigns cluster labels to each data point.
